@@ -21,19 +21,16 @@
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    AWESOME ARTICLE
+                    PYTHON DEMO APP
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">DEPLOY DOCKER CONTAINER TO KUBERNETES CLUSTER</h5>
-                    <p class="card-text">
-                        Docker is an open-source containerization tool that packages applications 
-                        into small units called containers. 
-                        A docker container image is a standalone software package that contains all 
-                        the requirements for an application to run. 
-                        Without docker, a developer can send a running code to a tester but upon running,                        the code might not run on the tester's system. 
-                        However, with Docker, an app is packaged with all the requirements and dependencies hence a Docker container can run on any platform.
-                    </p>
-                    <a href="#" class="btn btn-success ">view article</a>
+                    <h1>
+                        {% if message != None: %}
+                            <h1>{{ message }}</h1>
+                        {% else %}
+                            <h1>Hello World!</h1>
+                        {% endif %}
+                        </h1>
                 </div>
             </div>
         </div>
